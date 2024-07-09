@@ -49,3 +49,39 @@ def plot_stock_price(ticker):
     plt.grid(True)
     plt.savefig('stock.png')
     plt.close
+
+functions = [
+    {
+        'name': 'get_stock_price',
+        'description': 'Get the latest stock price given the ticker symbol of a company.',
+        'parameters': {
+            'type': 'object',
+            'properties': {
+                'ticker': {
+                    'type': 'string',
+                    'description': 'The stock ticker symbol for a company (for eaxmple AAPL for Apple).'
+                }
+            },
+            'required': ['ticker']
+        }
+    },
+    {
+        'name': 'calculate_SMA',
+        'description': 'calculate the simple moving average for a given stock ticker and a window.',
+        'parameters': {
+            'type': 'object',
+            'properties': {
+                'ticker': {
+                    'type': 'string',
+                    'description': 'The stock ticker symbol for a company (e.g., AAPL for Apple)',
+                },
+            },
+            'required': ['ticker'],
+        }
+    },
+    {
+        'name': 'calculate_RSI',
+        'description': 'calculate the RSI for '
+    }
+
+]
